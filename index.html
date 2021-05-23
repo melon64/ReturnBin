@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReturnBin Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="help.html">REQUEST HELP</a></li>
+                <li><a href="lost.html">LOST LIST</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Reuniting Owners With Lost Items</h1>
+            <p>
+            ReturnBin allows users to request for assistance from other users, inputting information about their lost item including what it is and what it looks like, <br>the general vicinity of where it was seen last, contact information, and if they wish, a reward offer.
+            </p>
+            <a href="about.html" class="h-btn">Click to learn more about us.</a>
+        </div>
+    </section>
+
+    <!-- about -->
+<section class="help">
+    <h1>Requesting Help</h1>
+    <p>Lost an item? Simply post a request for help from other users! <br>Fill a form to provide general information about what you lost and where you lost it in order to receive aid.<br> Be sure to include contact information for users to reach out if they find your item.
+    </p>
+    <div class="row">
+        <div class="formLink">
+            <a href="help.html" target="_self">
+                <img src="images/search.jpg">
+            </a>
+            <figcaption>Click to ask for aid.</figcaption>
+        </div>
+    </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
